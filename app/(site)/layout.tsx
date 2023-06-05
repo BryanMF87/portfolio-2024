@@ -1,4 +1,5 @@
 import '../(studio)/layout';
+import { ProjectProvider } from './projectContext';
 import { Raleway } from 'next/font/google';
 import { getPages } from "@/sanity/sanity-utils";
 import Header from './components/Header';
@@ -27,7 +28,9 @@ export default async function RootLayout({
 
         <Header pages={pages} />
 
-        <main>{children}</main>
+        <ProjectProvider>
+          <main>{children}</main>
+        </ProjectProvider>
 
         <Footer />
 

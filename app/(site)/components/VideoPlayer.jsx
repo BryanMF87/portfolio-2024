@@ -1,6 +1,6 @@
 import React from 'react';
 
-const VideoPlayer = ({activeOption, setActiveOption}) => {
+const VideoPlayer = () => {
   return (
     <video controls className="w-full max-w-5xl mt-10 mx-auto">
       <source src="/videos/video.mp4" type="video/mp4" />
