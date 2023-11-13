@@ -1,33 +1,48 @@
-@tailwind base;
+
 @tailwind components;
 @tailwind utilities;
 
-.wave {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-  }
-  
-  .wave svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 50px;
-  }
-  
-  .wave .shape-fill {
-    fill: #f8fafc;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  html {
-    scroll-behavior: smooth;
-  }
+body * {
+  transition: all;
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+}
 
- body * {
-    transition: all;
-    transition-timing-function: linear;
-    transition-duration: 200ms;
+.disable-scroll {
+  overflow: hidden;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet {
+  background-color: #ccc;
+  width: 15px;
+  height: 15px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet:hover {
+  background-color: #f5f5f5;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #FF1B6B;
+}
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
   }
+}
+
+@tailwind base;

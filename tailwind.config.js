@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -7,18 +8,27 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        roboto: ["var(--roboto)"],
+      },
       colors: {
-        'instagram-purple': '#833AB4',
-        'instagram-red': '#FD1D1D',
-        'instagram-yellow': '#FBBF24',
-        'facebook-blue': '#1877F2',
-        'linkedin-blue': '#0A66C2',
-        'after-effects': '#00D8FF',
-        'blender': '#F57900',
-        'premiere-pro': '#2A56C6',
-        'photoshop': '#26C9FF',
-        'illustrator': '#FF7C00',
-      }
+        ccHighlight: '#FF1B6B', // hot pink
+        ccOffBlack: '#171717',
+        ccOffWhite: '#f5f5f5',
+        ccGray: '#777777',
+        ccGray2: '#212121',
+      },
+      animation: {
+        ["infinite-slider"]: "infiniteSlider 20s linear infinite",
+      },
+      keyframes: {
+        infiniteSlider: {
+          "0%": { transform: "translateX(0)" },
+          "100%": {
+            transform: "translateX(calc(-100px * 10))",
+          },
+        },
+      },
     },
   },
   plugins: [],
