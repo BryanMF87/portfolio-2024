@@ -30,6 +30,12 @@ body * {
   background-color: #FF1B6B;
 }
 
+.text-stroke-white {
+   color: var(--ccOffBlack);
+   -webkit-text-stroke: 1px white; /* WebKit/Blink browsers */
+   text-stroke: 1px white; /* Standard syntax */
+}
+
 @layer utilities {
   @variants responsive {
     /* Hide scrollbar for Chrome, Safari and Opera */

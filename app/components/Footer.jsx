@@ -5,7 +5,7 @@ import FAQ from '../components/FAQ';
 
 const Footer = () => {
   return (
-      <section id="contact"  className="px-6 bg-ccOffBlack text-ccOffWhite sm:px-20">
+      <section id="contact"  className="px-6 bg-ccOffBlack text-ccOffWhite sm:px-20 lg:px-40">
           
           <div className="py-20 lg:flex lg:gap-14">
             <FAQ />
@@ -25,7 +25,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <footer className="text-center text-lg text-ccOffWhite border-t border-solid border-ccGray py-10 px-6 -mx-6 sm:px-20 sm:-mx-20">
+          <footer className="text-center text-lg text-ccOffWhite border-t border-solid border-ccGray py-10 px-6 -mx-6 sm:px-20 sm:-mx-20 lg:px-40 lg:-mx-40 ">
             <div className="flex flex-col gap-6 max-w-5xl mx-auto md:flex-row md:justify-between md:items-center">
               <p className="text-white">©2023, built with love by <span className="text-pink-600">Bryan Fink</span></p>
               <div className="flex gap-10 mx-auto text-3xl py-4 px-6 rounded-lg md:mx-[0] md:py-2 md:px-4 md:gap-6 md:text-xl">

@@ -7,10 +7,10 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'xs': '540px',
+    },
     extend: {
-      fontFamily: {
-        roboto: ["var(--roboto)"],
-      },
       colors: {
         ccHighlight: '#FF1B6B', // hot pink
         ccOffBlack: '#171717',

@@ -15,7 +15,7 @@ const  ProjectGallery = () => {
   }, [subject]);
 
   return (
-      <div className="bg-ccGray2 py-28 px-6 -mx-6 sm:px-20 sm:-mx-20">
+      <div className="bg-ccGray2 py-28 px-6 -mx-6 sm:px-20 sm:-mx-20 lg:px-40 lg:-mx-40">
         
         {/* project category selector */}
         <div className="text-center md:flex md:text-left md:justify-between md:mb-10">
@@ -31,16 +31,16 @@ const  ProjectGallery = () => {
         </div>
 
         {/* projects displayed */}
-        <div className="flex flex-col gap-10 md:grid md:grid-cols-2 lg:grid-cols-4">
+        <div className="flex flex-col gap-6 md:flex-row">
           {displayProjects.map((project, index) => (
             <div
               key={index}
-              className="w-11/12 mx-auto rounded-xl md:w-full"
+              className="w-11/12 mx-auto rounded-xl md:w-1/4"
             >
               <img
                 src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
                 alt="Sarah Paulson of Paulson's Bakery"
-                className="w-full h-48 object-cover rounded-lg"
+                className="w-full h-96 object-cover rounded-lg"
               />
             </div>
           ))}

@@ -3,7 +3,7 @@ import { stackData } from "../data";
 const TechStackSlider = () => {
 
     return (
-      <div className="relative w-full overflow-hidden box-content px-6 -mx-6 sm:px-20 sm:-mx-20">
+      <div className="relative w-full overflow-hidden box-content px-6 -mx-6 sm:px-20 sm:-mx-20 lg:px-40 lg:-mx-40">
         <div className="animate-infinite-slider flex gap-14 mt-6">
             {stackData.map((skill,index) => (
                 <li key={index}

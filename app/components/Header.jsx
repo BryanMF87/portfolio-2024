@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaTimes, FaBars } from 'react-icons/fa';
 import { IoIosArrowForward } from 'react-icons/io';
 import Image from 'next/image';
@@ -9,59 +9,61 @@ const Header = () => {
 
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  const toggleNav = () => {
-    setIsNavOpen(!isNavOpen)
-  }
 
   useEffect(() => {
-    if (isNavOpen) {
-      document.body.classList.add('disable-scroll');
-    } else {
-      document.body.classList.remove('disable-scroll');
-    }
-
-    // Clean up the effect
-    return () => {
-      document.body.classList.remove('disable-scroll');
+    const toggleNav = () => {
+      window.innerWidth < 768 ? setIsNavOpen(false) : setIsNavOpen(true)
     };
-  }, [isNavOpen]);
+  
+    window.addEventListener('resize', toggleNav);
+  }, []);
 
   return (
-    <header className={`relative z-[55] w-full md:px-6 md:absolute `}>
-      <div className="flex items-center justify-between">
-        <button className="flex justify-center w-20 hover:scale-110 md:hidden" onClick={toggleNav} aria-label="Toggle Navigation">
-            <span className='flex justify-end text-2xl'>
-              {isNavOpen ? <FaTimes /> : <FaBars />}
-            </span>
-        </button>
-        <div className="flex justify-center items-center gap-2 py-2 w-full border-x border-dashed border-gray-300 md:justify-start md:border-none">
+    <header className='fixed z-50 top-0 left-0 flex justify-between items-center w-full h-16 px-6 bg-ccOffBlack md:h-20'>
+
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2 py-2 w-full">
           <Image 
-            src="/selfie.png"
+            src="/bryan2.png"
             alt="Bryan Fink, Developer and designer"
             width={40}
             height={40}
-            className="w-10 h-10 object-cover rounded-full border-2 border-pink-600 drop-shadow-lg"
+            className="w-10 h-10 object-cover rounded-full border-2 border-pink-600 drop-shadow-lg opacity-50"
           />
-          <p className="text-xl text-ccDarkText font-semibold md:text-lg">Bryan Fink</p>
+          <p className="text-xl tracking-tight text-ccOffWhite font-medium md:text-lg">Bryan Fink</p>
         </div>
-        <div className="w-20 md:hidden"></div>
+
+        <button 
+          className="flex justify-center text-ccOffWhite hover:text-ccHighlight hover:scale-110 md:hidden" 
+          onClick={()=> setIsNavOpen(!isNavOpen)} 
+          aria-label="Toggle Navigation"
+        >
+            <span className='flex justify-end text-4xl'>
+              {isNavOpen ? <FaTimes /> : <FaBars />}
+            </span>
+        </button>
       </div>
 
+
       {isNavOpen && (
-        <nav className="absolute drop-shadow-md w-full h-screen flex flex-col gap-10 p-14 border-t-2 border-dashed border-gray-300 bg-white overflow-hidden md:static md:h-10 md:top-0 md:flex-row md:gap-5 md:justify-end">
-          <a href={"/"}  onClick={() => setIsNavOpen(false)} className="flex justify-between items-center w-full text-2xl font-semibold hover:text-pink-600 md:w-fit md:p-0 md:gap-1 md:hover:scale-110 md:text-sm md:text-gray-400 md:hover:text-pink-600">
+        <nav className="fixed top-14 right-0 bottom-0 left-0 z-50 w-full h-full flex flex-col gap-8 p-6 bg-ccOffBlack md:flex-row">
+          <a href={"/"}  onClick={() => setIsNavOpen(false)} className="flex justify-between items-center w-full text-2xl text-ccOffWhite font-semibold md:text-sm">
             Home
             <IoIosArrowForward className="md:hidden"/>
           </a>
-          <a href={"/#work"}  onClick={() => setIsNavOpen(false)} className="flex justify-between items-center w-full text-2xl font-semibold hover:text-pink-600 md:bg-transparent md:w-fit md:p-0 md:gap-1 md:hover:scale-110 md:text-sm md:text-gray-400 md:hover:text-pink-600">
+          <a href={"/#work"}  onClick={() => setIsNavOpen(false)} className="flex justify-between items-center w-full text-2xl text-ccOffWhite font-semibold md:text-sm">
             Work
             <IoIosArrowForward className="md:hidden"/>
           </a>
-          <a href={"/#testimonials"}  onClick={() => setIsNavOpen(false)} className="flex justify-between items-center w-full text-2xl font-semibold hover:text-pink-600 md:bg-transparent md:w-fit md:p-0 md:gap-1 md:hover:scale-110 md:text-sm md:text-gray-400 md:hover:text-pink-600">
+          <a href={"/#work"}  onClick={() => setIsNavOpen(false)} className="flex justify-between items-center w-full text-2xl text-ccOffWhite font-semibold md:text-sm">
+            About
+            <IoIosArrowForward className="md:hidden"/>
+          </a>
+          <a href={"/#testimonials"}  onClick={() => setIsNavOpen(false)} className="flex justify-between items-center w-full text-2xl text-ccOffWhite font-semibold md:text-sm">
             Testimonials
             <IoIosArrowForward className="md:hidden"/>
           </a>
-          <a href={"#contact"}  onClick={() => setIsNavOpen(false)} className="flex w-full justify-center bg-black text-white rounded-lg pt-3 pb-4 text-2xl font-semibold hover:bg-pink-600 md:bg-transparent md:w-fit md:p-0 md:gap-1 md:hover:scale-110 md:text-sm md:text-gray-400 md:hover:text-pink-600">
+          <a href={"#contact"}  onClick={() => setIsNavOpen(false)} className="flex w-full h-16 justify-center items-center bg-ccHighlight text-white rounded-md text-2xl text-ccOffWhite font-semibold md:text-sm md:px-3 md:h-8">
             Contact
           </a>
         </nav>
