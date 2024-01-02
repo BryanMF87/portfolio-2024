@@ -15,8 +15,14 @@ module.exports = {
         ccHighlight: '#FF1B6B', // hot pink
         ccOffBlack: '#171717',
         ccOffWhite: '#f5f5f5',
-        ccGray: '#777777',
+        ccGray: '#999',
         ccGray2: '#212121',
+      },
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
       },
       animation: {
         ["infinite-slider"]: "infiniteSlider 20s linear infinite",

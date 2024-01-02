@@ -12,7 +12,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="lg:order-2 lg:w-1/2">
+    <div className="md:order-2 md:w-1/2">
         <h2 className="font-medium text-3xl text-ccOffWhite">Frequently Asked Questions</h2>
         <ul className="mt-4 divide-y divide-solid divide-ccGray">
           {FAQData.map((item, index) => (

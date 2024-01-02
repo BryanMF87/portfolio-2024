@@ -172,47 +172,47 @@ export const projectData = [
 
   export const testimonialData = [
     {
-        image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80",
-        alt: `Sarah Paulson of Paulson's Bakery`,
-        name: 'First Last',
-        company: 'company',
-        description: 'Exceptional service! My website went from outdated to cutting-edge thanks to your web development team. The attention to detail and commitment to delivering beyond expectations truly impressed me.',
+      image: "/german2.png",
+      alt: `German Ortega, Germ the Creator, INC`,
+      name: 'German Ortega',
+      company: 'Germ the Creator, INC',
+      description: 'Exceptional service! My website went from outdated to cutting-edge thanks to your web development team. The attention to detail and commitment to delivering beyond expectations truly impressed me.',
     },
     {
-        image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80",
-        alt: `Sarah Paulson of Paulson's Bakery`,
-        name: 'First Last',
-        company: 'company',
-        description: `I couldn't be happier with the results. Your web developers transformed my vision into a functional and visually stunning website. The seamless user experience they created has boosted my online presence.`,
+      image: "/german2.png",
+      alt: `German Ortega, Germ the Creator, INC`,
+      name: 'German Ortega',
+      company: 'Germ the Creator, INC',
+      description: 'Exceptional service! My website went from outdated to cutting-edge thanks to your web development team. The attention to detail and commitment to delivering beyond expectations truly impressed me.',
     },
     {
-        image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80",
-        alt: `Sarah Paulson of Paulson's Bakery`,
-        name: 'First Last',
-        company: 'company',
-        description: 'Working with your web development company was a game-changer for my business. The responsive and innovative website you built not only attracted more clients but also made managing my content a breeze. Thanks for the outstanding work!',
-    }
+      image: "/german2.png",
+      alt: `German Ortega, Germ the Creator, INC`,
+      name: 'German Ortega',
+      company: 'Germ the Creator, INC',
+      description: 'Exceptional service! My website went from outdated to cutting-edge thanks to your web development team. The attention to detail and commitment to delivering beyond expectations truly impressed me.',
+    },
 ];
 
 export const FAQData = [
   {
     question: 'How much does your services cost?',
-    answer: 'This is the answer'
+    answer: 'Graphic services cost generally between $500 to $1,500 and web services between $2,0000 - $5,0000 USD, depending on the size and scope of the project. The bigger and more complex a project is, the more time it takes to complete and the higher the costs.'
   },
   {
     question: 'How much time does it take?',
-    answer: 'This is the answer'
+    answer: 'Based on size and scope of the project, graphic servics can take 1-7 business days, and web services can range from 5-12 weeks, depending.'
   },
   {
-    question: 'How customized can my product be?',
-    answer: 'This is the answer'
+    question: 'How customized can my project be?',
+    answer: 'You can have as little or as much customization / say-so in your project as you want. The biggest goal of every project is that you are satisfied with the end result.'
   },
   {
-    question: 'How much does your services cost?',
-    answer: 'This is the answer'
+    question: 'You are ready to start a new project, now what?',
+    answer: 'Great! We will set up a free 15 minute conference call to discuss your project and gather initial information. I will come back in 1-3 business days with a detailed proposal that outlines all aspects of your project, and if agreed upon, I will begin turning your idea into reality.'
   },
   {
-    question: 'How much does your services cost?',
-    answer: 'This is the answer'
+    question: 'How do I accept payment?',
+    answer: 'Projects are usually paid via card services in a 50/25/25 setup using, 50% project total to start the project, 25% at the "midway" point, and 25% at after the project is complete.'
   },
 ]

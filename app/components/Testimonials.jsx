@@ -6,19 +6,13 @@ import { Swiper, SwiperSlide} from 'swiper/react';
 import {Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Open_Sans } from 'next/font/google'
-
-const openSans = Open_Sans ({
-    subsets: ['latin'],
-    weight: '700',
-});
-
 
 
 const Testimonials = () => {
 
     return (
-        <div className="px-6 pb-40">
+        <div id="testimonials" className="relative px-6 py-40 md:px-20">
+             <p className="absolute top-36 -left-[3.25rem] shrink-0 transform rotate-90 text-ccGray font-bold tracking-tight hidden md:block md:text-4xl md:top-1/2 lg:text-5xl lg:-left-[5.25rem]">Testimonials</p>
             <Swiper
                 spaceBetween={50}
                 slidesPerView={1}
@@ -27,20 +21,22 @@ const Testimonials = () => {
             >
                 {testimonialData.map((testimonial,index) => (
                     <SwiperSlide key={index}>
-                        <div className="md:flex md:gap-10 md:w-[35rem] md:mx-auto">
-                            <Image
-                                src="/german.png" 
-                                alt={testimonial.alt} 
-                                width="100"
-                                height="100"
-                                className="w-9/12 h-auto object-cover mx-auto md:w-52 md:shrink-0"
-                            />
-                            <div className="relative font-medium text-center mb-14 md:text-left">
-                                <p className={`font-sans absolute top-14 left-0 z-[-1] font-bold text-9xl text-ccGray2 leading-10`}>"</p>
-                                <h2 className="text-ccOffWhite text-3xl">{testimonial.name}</h2>
-                                <p className="text-ccHighlight text-lg mt-1 mb-4">{testimonial.company}</p>
+                        <div className="md:flex md:items-center md:gap-10 md:w-[40rem] md:mx-auto">
+                            <div className="relative shrink-0 flex justify-center md:w-3/12 md:-mt-10 lg:w-4/12 lg:-mt-20">
+                                <Image
+                                    src="/german2.png" 
+                                    alt={testimonial.alt} 
+                                    width="100"
+                                    height="100"
+                                    className="w-56 h-auto object-cover md:w-full"
+                                />
+                                {/* pink box */}
+                                <div className="absolute bottom-1 z-[-2] bg-ccHighlight w-52 h-32 mx-auto rounded-xl md:w-11/12 md:h-28"></div>
+                            </div>
+                            <div className="relative font-medium text-center mb-14 sm:px-12 md:text-left md:px-0 md:w-9/12 lg:w-8/12 lg:mb-20">
+                                <h2 className="text-ccOffWhite text-5xl md:text-[2.5rem]">{testimonial.name}</h2>
+                                <p className="text-ccHighlight text-2xl mt-3 mb-4 md:mt-2">{testimonial.company}</p>
                                 <p className="text-ccGray text-lg">{testimonial.description}</p>
-                                <p className="absolute bottom-[-70px] right-0 z-[-1] font-bold text-9xl text-ccGray2 leading-10">"</p>
                             </div>
                         </div>
                     </SwiperSlide>

@@ -38,7 +38,7 @@ const Header = () => {
           onClick={()=> setIsNavOpen(!isNavOpen)} 
           aria-label="Toggle Navigation"
         >
-            <span className='flex justify-end text-4xl'>
+            <span className='flex justify-end text-2xl'>
               {isNavOpen ? <FaTimes /> : <FaBars />}
             </span>
         </button>
@@ -46,17 +46,17 @@ const Header = () => {
 
 
       {isNavOpen && (
-        <nav className="fixed top-14 right-0 bottom-0 left-0 z-50 w-full h-full flex flex-col gap-8 p-6 bg-ccOffBlack md:flex-row">
+        <nav className="fixed top-14 right-0 bottom-0 left-0 z-50 w-full h-full flex flex-col gap-12 pt-10 p-6 bg-ccOffBlack md:flex-row md:gap-8 md:static md:h-auto md:w-auto md:p-0">
           <a href={"/"}  onClick={() => setIsNavOpen(false)} className="flex justify-between items-center w-full text-2xl text-ccOffWhite font-semibold md:text-sm">
             Home
             <IoIosArrowForward className="md:hidden"/>
           </a>
-          <a href={"/#work"}  onClick={() => setIsNavOpen(false)} className="flex justify-between items-center w-full text-2xl text-ccOffWhite font-semibold md:text-sm">
-            Work
+          <a href={"/#about"}  onClick={() => setIsNavOpen(false)} className="flex justify-between items-center w-full text-2xl text-ccOffWhite font-semibold md:text-sm">
+            About
             <IoIosArrowForward className="md:hidden"/>
           </a>
           <a href={"/#work"}  onClick={() => setIsNavOpen(false)} className="flex justify-between items-center w-full text-2xl text-ccOffWhite font-semibold md:text-sm">
-            About
+            Work
             <IoIosArrowForward className="md:hidden"/>
           </a>
           <a href={"/#testimonials"}  onClick={() => setIsNavOpen(false)} className="flex justify-between items-center w-full text-2xl text-ccOffWhite font-semibold md:text-sm">

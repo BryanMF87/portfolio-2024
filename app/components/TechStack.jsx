@@ -16,7 +16,7 @@ const TechStackSlider = () => {
                 <li key={index}
                   className="slide flex flex-col gap-2 items-center text-ccGray hover:text-white">
                   <skill.icon className="text-7xl"/>
-                  <p className="text-sm">{skill.name}</p>
+                  <p className="text-sm font-medium">{skill.name}</p>
               </li>
             ))};
         </div>
