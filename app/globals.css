@@ -31,7 +31,6 @@ body * {
 }
 
 .text-stroke-gray {
-   color: var(--ccOffBlack);
    font-weight: 600;
    -webkit-text-stroke: 1px #777; /* WebKit/Blink browsers */
    text-stroke: 1px #777; /* Standard syntax */

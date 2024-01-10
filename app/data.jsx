@@ -55,10 +55,11 @@ export const stackData = [
 
 export const projectData = [
     {
-      title: "Scum Bar Brawl",
-      description: "Recreation of the insult sword fighting minigame from Monkey Island.",
+      id: "germ-the-creator",
+      title: "Germ The Creator",
+      description: "Booking Website",
       category: "development",
-      imageURL: "project1.jpg",
+      imageURL: "/projects/germthecreator.png",
       altText: "Monkey Island sword fighting JavaScript game",
       summary: "This homage to the Great Monkey Island web game series recreates the insult sword battling mini-game. Since building games require far more logical thinking than standard websites, this was a great chance to challenge my JavaScript programming skills while learning more advanced React hooks, promises, and SCSS.",
       challenge: "Challenge here",
@@ -69,26 +70,27 @@ export const projectData = [
       Roles: ['Designer', 'Developer']
     },
     {
-      title: "Travel Website",
-      description: "Description for Project 2",
+      id: "scumm-bar-brawl",
+      title: "Scumm Bar Brawl",
+      description: "JS Mini Game",
       category: "development",
-      imageURL: "project2.jpg",
-      altText: "Alt text here",
-      summary: "I took a layered PSD mockup and built a fully responsive website with an extendable information accordion and a repeating card carousel component. The goal was to pick a complex website mock up to recreate so I could challenge my coding skills, and to make a desktop layout mobile friendly. During this project I learned static site generation from Gatsby Js and styled components.",
+      imageURL: "/projects/monkeyisland.png",
+      altText: "Monkey Island sword fighting JavaScript game",
+      summary: "This homage to the Great Monkey Island web game series recreates the insult sword battling mini-game. Since building games require far more logical thinking than standard websites, this was a great chance to challenge my JavaScript programming skills while learning more advanced React hooks, promises, and SCSS.",
       challenge: "Challenge here",
       solution: "Solution here",
-      demo: "https://bryanfink.dev/travel-website/",
-      github: "https://github.com/BryanMF87/travel-website",
-      design: "",
-      tools: ['HTML', 'Styled Components', 'JavaScript', 'React', 'Gatsby'],
-      Roles: ['Developer']
+      demo: "https://bryanfink.dev/scumm-bar-brawl/",
+      github: "https://github.com/BryanMF87/scumm-bar-brawl",
+      tools: ['HTML', 'SCSS', 'JavaScript', 'React'],
+      Roles: ['Designer', 'Developer']
     },
     {
+      id: "time-tracker-app",
       title: "Time Tracker App",
-      description: "Description for Project 3",
+      description: "Productivity App",
       category: "development",
-      imageURL: "project2.jpg",
-      altText: "Alt text here",
+      imageURL: "/projects/timetracker.png",
+      altText: "Time tracking productivity app",
       summary: "I needed a way to track my billable hours for future projects, so I built a simple time tracker that records overall project time as well as breaks the project down by actionable item. It features mobile-first responsive design, local storage information saving, and a night-mode for after hour coding use.",
       challenge: "Challenge here",
       solution: "Solution here",
@@ -98,11 +100,12 @@ export const projectData = [
       Roles: ['Designer', 'Developer'] 
     },
     {
-      title: "Time Tracker App",
-      description: "Description for Project 3",
+      id: "world-flag-flashcards",
+      title: "World Flag Flashcards",
+      description: "Memory Game",
       category: "development",
-      imageURL: "project2.jpg",
-      altText: "Alt text here",
+      imageURL: "/projects/worldflags.png",
+      altText: "Multiple choice memory game for world flags ",
       summary: "I needed a way to track my billable hours for future projects, so I built a simple time tracker that records overall project time as well as breaks the project down by actionable item. It features mobile-first responsive design, local storage information saving, and a night-mode for after hour coding use.",
       challenge: "Challenge here",
       solution: "Solution here",
@@ -112,10 +115,11 @@ export const projectData = [
       Roles: ['Designer', 'Developer'] 
     },
     {
+      id: "arcrypto",
       title: "ARCrypto",
-      description: "I design digital ad packages for a crypto education company.",
+      description: "Digital ads",
       category: "design",
-      imageURL: "project1.jpg",
+      imageURL: "/projects/arcrypto.png",
       altText: "ARCrypto digital ad packages",
       summary: "Summary here",
       challenge: "Challenge here",
@@ -126,78 +130,66 @@ export const projectData = [
       Roles: ['Designer', 'Developer']
     },
     {
+      id: "proud-provisions",
+      title: "Proud Provisions",
+      description: "Website design",
+      category: "design",
+      imageURL: "/projects/proudprovisions.png",
+      altText: "Alt text here",
+      summary: "Summary here",
+      challenge: "Challenge here",
+      solution: "Solution here",
+      demo: "https://bryanfink.dev/scumm-bar-brawl/",
+      github: "https://github.com/BryanMF87/scumm-bar-brawl",
+      tools: ['HTML', 'SCSS', 'JavaScript', 'React'],
+      Roles: ['Designer', 'Developer']
+    },
+    {
+      id: "super-clean",
       title: "Super Clean",
-      description: "Description for Project 5",
+      description: "Website Design",
       category: "design",
-      imageURL: "project2.jpg",
-      altText: "Super Clean website",
-      summary: "Summary here",
+      imageURL: "/projects/superclean.png",
+      altText: "Professional cleaning business, Super Clean",
+      summary: "I needed a way to track my billable hours for future projects, so I built a simple time tracker that records overall project time as well as breaks the project down by actionable item. It features mobile-first responsive design, local storage information saving, and a night-mode for after hour coding use.",
       challenge: "Challenge here",
       solution: "Solution here",
-      demo: "https://bryanfink.dev/scumm-bar-brawl/",
-      github: "https://github.com/BryanMF87/scumm-bar-brawl",
-      tools: ['HTML', 'SCSS', 'JavaScript', 'React'],
-      Roles: ['Designer', 'Developer']
+      demo: "https://www.supercleanatl.com/",
+      tools: ['SquareSpace', 'CSS', 'JavaScript'],
+      Roles: ['Designer', 'Developer'] 
     },
-    {
-      title: "Proud Provisions",
-      description: "Description for Project 6",
-      category: "design",
-      imageURL: "project2.jpg",
-      altText: "Alt text here",
-      summary: "Summary here",
-      challenge: "Challenge here",
-      solution: "Solution here",
-      demo: "https://bryanfink.dev/scumm-bar-brawl/",
-      github: "https://github.com/BryanMF87/scumm-bar-brawl",
-      tools: ['HTML', 'SCSS', 'JavaScript', 'React'],
-      Roles: ['Designer', 'Developer']
-    },
-    {
-      title: "Proud Provisions",
-      description: "Description for Project 6",
-      category: "design",
-      imageURL: "project2.jpg",
-      altText: "Alt text here",
-      summary: "Summary here",
-      challenge: "Challenge here",
-      solution: "Solution here",
-      demo: "https://bryanfink.dev/scumm-bar-brawl/",
-      github: "https://github.com/BryanMF87/scumm-bar-brawl",
-      tools: ['HTML', 'SCSS', 'JavaScript', 'React'],
-      Roles: ['Designer', 'Developer']
-    },
+
   ];
 
 
   export const testimonialData = [
     {
       image: "/german2.png",
-      alt: `German Ortega, Germ the Creator, INC`,
+      alt: `German Ortega, Germ the Creator`,
       name: 'German Ortega',
-      company: 'Germ the Creator, INC',
-      description: 'Exceptional service! My website went from outdated to cutting-edge thanks to your web development team. The attention to detail and commitment to delivering beyond expectations truly impressed me.',
+      company: 'Germ the Creator',
+      description: '"Bryan made everything incredibly easy, from suggesting the right platform to choosing the fonts, colors, and content to help elevate my brand."',
     },
     {
-      image: "/german2.png",
-      alt: `German Ortega, Germ the Creator, INC`,
-      name: 'German Ortega',
-      company: 'Germ the Creator, INC',
-      description: 'Exceptional service! My website went from outdated to cutting-edge thanks to your web development team. The attention to detail and commitment to delivering beyond expectations truly impressed me.',
+      image: "/mark3.png",
+      alt: `Mark Simonton, Proud Provisions`,
+      name: 'Mark Simonton',
+      company: 'Proud Provisions',
+      description: '"A super detailed project proposal and consistent communication meant that I knew exactly what to expect and built a lot of trust from the start."',
     },
     {
-      image: "/german2.png",
-      alt: `German Ortega, Germ the Creator, INC`,
-      name: 'German Ortega',
-      company: 'Germ the Creator, INC',
-      description: 'Exceptional service! My website went from outdated to cutting-edge thanks to your web development team. The attention to detail and commitment to delivering beyond expectations truly impressed me.',
+      image: "/wilson.png",
+      alt: `Wilson Smith, ARCrypto`,
+      name: 'Wilson Smith',
+      company: 'ARCrypto',
+      description: '"The client absolutely loved the work Bryan did for us and we are so happy to be working with him! Will definitly recommend to our partners in the future."',
     },
 ];
 
 export const FAQData = [
   {
     question: 'How much does your services cost?',
-    answer: 'Graphic services cost generally between $500 to $1,500 and web services between $2,0000 - $5,0000 USD, depending on the size and scope of the project. The bigger and more complex a project is, the more time it takes to complete and the higher the costs.'
+    answer: 'Graphic services cost generally between $500 to $1,500 and web services between $2,0000 - $5,000 USD, depending on the size and scope of the project. The bigger and more complex a project is, the more time it takes to complete and the higher the costs.'
   },
   {
     question: 'How much time does it take?',
