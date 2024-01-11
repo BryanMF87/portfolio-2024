@@ -18,7 +18,7 @@ const Footer = () => {
                     href="mailto:bmfink87@gmail.com" 
                     target='_blank' 
                     rel='noopener' 
-                    className="bg-ccHighlight text-white text-center font-medium py-3 px-6 bg-ccHighlight1 text-xl rounded-lg"
+                    className="bg-ccHighlight text-white text-center font-medium p-5 bg-ccHighlight1 text-xl rounded-lg md:py-3 md:px-6"
                   >
                     <span>Contact Me</span>
                   </a>

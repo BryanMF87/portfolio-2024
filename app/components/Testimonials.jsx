@@ -21,7 +21,7 @@ const Testimonials = () => {
             >
                 {testimonialData.map((testimonial,index) => (
                     <SwiperSlide key={index}>
-                        <div className="md:flex md:items-start md:gap-10 md:w-[40rem] md:mx-auto">
+                        <div className="md:flex md:items-start md:gap-8 md:w-[40rem] md:mx-auto">
                             <div className="relative shrink-0 flex justify-center items-end md:w-3/12 lg:w-4/12">
                                 <Image
                                     src={testimonial.image} 
@@ -32,7 +32,7 @@ const Testimonials = () => {
                                 />
 
                                 {/* pink box */}
-                                <div className="absolute bottom-1 z-[-2] bg-ccHighlight w-[13.95rem] h-32 mx-auto rounded-xl md:w-[99.5%] md:h-28"></div>
+                                <div className="absolute bottom-1 z-[-2] bg-ccHighlight w-[13.95rem] h-24 mx-auto rounded-xl md:w-[99.5%] lg:h-28"></div>
 
                             </div>
                             <div className="text-center mt-3 mb-14 sm:px-12 md:text-left md:mt-14 md:px-0 md:w-9/12 lg:w-8/12 lg:mt-20">

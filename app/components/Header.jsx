@@ -9,11 +9,12 @@ const Header = () => {
 
   const [isNavOpen, setIsNavOpen] = useState(false);
 
+  const toggleNav = () => {
+    window.innerWidth < 768 ? setIsNavOpen(false) : setIsNavOpen(true);
+  };
 
   useEffect(() => {
-    const toggleNav = () => {
-      window.innerWidth < 768 ? setIsNavOpen(false) : setIsNavOpen(true)
-    };
+    toggleNav();
   
     window.addEventListener('resize', toggleNav);
   }, []);
@@ -47,23 +48,23 @@ const Header = () => {
 
           {isNavOpen && (
             <nav className="fixed top-14 right-0 bottom-0 left-0 z-50 w-full h-full flex flex-col gap-12 pt-10 p-6 bg-ccOffBlack md:flex-row md:gap-8 md:static md:h-auto md:w-auto md:p-0">
-              <a href={"/"}  onClick={() => setIsNavOpen(false)} className="flex justify-between items-center w-full text-2xl text-ccOffWhite font-semibold md:text-sm">
+              <a href={"/"}  onClick={()=> toggleNav()} className="flex justify-between items-center w-full text-2xl text-ccOffWhite font-semibold md:text-sm">
                 Home
                 <IoIosArrowForward className="md:hidden"/>
               </a>
-              <a href={"/#about"}  onClick={() => setIsNavOpen(false)} className="flex justify-between items-center w-full text-2xl text-ccOffWhite font-semibold md:text-sm">
+              <a href={"/#about"}  onClick={() => toggleNav()} className="flex justify-between items-center w-full text-2xl text-ccOffWhite font-semibold md:text-sm">
                 About
                 <IoIosArrowForward className="md:hidden"/>
               </a>
-              <a href={"/#work"}  onClick={() => setIsNavOpen(false)} className="flex justify-between items-center w-full text-2xl text-ccOffWhite font-semibold md:text-sm">
+              <a href={"/#work"}  onClick={() => toggleNav()} className="flex justify-between items-center w-full text-2xl text-ccOffWhite font-semibold md:text-sm">
                 Work
                 <IoIosArrowForward className="md:hidden"/>
               </a>
-              <a href={"/#testimonials"}  onClick={() => setIsNavOpen(false)} className="flex justify-between items-center w-full text-2xl text-ccOffWhite font-semibold md:text-sm">
+              <a href={"/#testimonials"}  onClick={() => toggleNav()} className="flex justify-between items-center w-full text-2xl text-ccOffWhite font-semibold md:text-sm">
                 Testimonials
                 <IoIosArrowForward className="md:hidden"/>
               </a>
-              <a href={"#contact"}  onClick={() => setIsNavOpen(false)} className="flex w-full h-16 justify-center items-center bg-ccHighlight text-white rounded-md text-2xl text-ccOffWhite font-semibold md:text-sm md:px-3 md:h-8">
+              <a href={"#contact"}  onClick={() => toggleNav()} className="flex w-full h-16 justify-center items-center bg-ccHighlight text-white rounded-md text-2xl text-ccOffWhite font-semibold md:text-sm md:px-3 md:h-8">
                 Contact
               </a>
             </nav>
