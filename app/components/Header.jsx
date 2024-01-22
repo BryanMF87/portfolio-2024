@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaTimes, FaBars } from 'react-icons/fa';
 import { IoIosArrowForward } from 'react-icons/io';
-import Image from 'next/image';
 
 const Header = () => {
 

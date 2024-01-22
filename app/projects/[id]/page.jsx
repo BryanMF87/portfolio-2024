@@ -5,7 +5,7 @@ import MediaItem from '../../components/MediaItem';
 import Link from 'next/link';
 import Image from 'next/image';
 import ProjectGallery from '@/app/components/ProjectGallery';
-
+import { MotionDiv} from '@/app/lib/motion';
 
 const Project = ({ params }) => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -80,9 +80,14 @@ const Project = ({ params }) => {
 
           <div className="flex flex-col gap-14 max-w-8xl mx-auto">
             {selectedProject.media.firstMedia && (
-              <div className="flex justify-center items-center my-20">
+              <MotionDiv
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duraction: 0.35 }}
+                className="flex justify-center items-center my-20"
+              >
                 <MediaItem media={selectedProject.media.firstMedia} type="full" />
-              </div>
+              </MotionDiv>
             )}
 
             <div className="flex flex-col gap-10 max-w-8xl mx-auto md:flex-row lg:gap-14">
@@ -118,8 +123,22 @@ const Project = ({ params }) => {
 
             {selectedProject.media.secondMedia && (
               <div className="flex flex-col justify-center items-center gap-10 my-20 sm:flex-row lg:gap-14">
-                <MediaItem media={selectedProject.media.secondMedia} type="inline" />
-                <MediaItem media={selectedProject.media.thirdMedia} type="inline" />
+                <MotionDiv
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duraction: 0.25 }}
+                  className="w-full"
+                >
+                  <MediaItem media={selectedProject.media.secondMedia} type="inline" />
+                </MotionDiv>
+                <MotionDiv
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duraction: 0.25}}
+                  className="w-full"
+                >
+                  <MediaItem media={selectedProject.media.thirdMedia} type="inline" />
+                </MotionDiv>
               </div>
             )}
 
@@ -142,24 +161,48 @@ const Project = ({ params }) => {
             </div>
 
             {selectedProject.media.fourthMedia && (
-              <div className="flex justify-center items-center">
+              <MotionDiv
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duraction: 0.35 }}
+                className="flex justify-center items-center"
+              >
                 <MediaItem media={selectedProject.media.fourthMedia} type="full" />
-              </div>
+              </MotionDiv>
             )}
 
             {/* fifth media is ALWAYS accompanied by sixth media */}
 
             {selectedProject.media.fifthMedia && (
               <div className="flex flex-col justify-center items-center gap-10 sm:flex-row lg:gap-14">
-                <MediaItem media={selectedProject.media.fifthMedia} type="inline" />
-                <MediaItem media={selectedProject.media.sixthMedia} type="inline" />
+                <MotionDiv
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duraction: 0.25 }}
+                  className="w-full"
+                >
+                  <MediaItem media={selectedProject.media.fifthMedia} type="inline" />
+                </MotionDiv>
+                <MotionDiv
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duraction: 0.25 }}
+                  className="w-full"
+                >
+                  <MediaItem media={selectedProject.media.sixthMedia} type="inline" />
+                </MotionDiv>
               </div>
             )}
 
             {selectedProject.media.seventhMedia && (
-              <div className="flex justify-center items-center">
+              <MotionDiv
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duraction: 0.35 }} 
+                className="flex justify-center items-center"
+              >
                 <MediaItem media={selectedProject.media.seventhMedia} type="full" />
-              </div>
+              </MotionDiv>
             )}
           </div>
 

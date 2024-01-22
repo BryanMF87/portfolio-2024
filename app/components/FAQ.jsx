@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
 import { FAQData } from '../data';
+import { MotionDiv } from '../lib/motion';
 
 const FAQ = () => {
 
@@ -12,7 +13,12 @@ const FAQ = () => {
   };
 
   return (
-    <div className="md:order-2 md:w-1/2">
+    <MotionDiv 
+      initial={{ opacity: 0, x: -20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      duration={{ duration: 0.15 }}
+      className="md:order-2 md:w-1/2"
+    >
         <h2 className="font-medium text-3xl text-ccOffWhite">Frequently Asked Questions</h2>
         <ul className="mt-4 divide-y divide-solid divide-ccGray">
           {FAQData.map((item, index) => (
@@ -41,7 +47,7 @@ const FAQ = () => {
             </li>
           ))}
         </ul>
-    </div>
+    </MotionDiv>
   );
 }
 

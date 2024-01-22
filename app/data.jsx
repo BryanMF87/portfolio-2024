@@ -64,7 +64,7 @@ export const projectData = [
       outcome: "The end result features original gameplay artwork and response patterns of the Monkey Island series, making it a beautiful recreation that fans will recognize and hopefully inspires new players to check out the actual Monkey Island series.",
       demo: "https://bryanfink.dev/scumm-bar-brawl/",
       github: "https://github.com/BryanMF87/scumm-bar-brawl",
-      tools: ['HTML', 'SCSS', 'JavaScript', 'React'],
+      tools: ['Figma', 'HTML', 'SCSS', 'JavaScript', 'React'],
       deliverables: ['UX/UI', 'Web Design', 'Web Development', 'Research'],
       media: {
         cardImage: {
@@ -202,7 +202,7 @@ export const projectData = [
       summary: "ARCrypto teaches their clients how to navigate the cryptocurrency market and promote themselves through digital ads and an email newsletter. They had tried a few designers but were having trouble finding someone who could create quality content that worked within their visual brand guidelines.",
       outcome: "After partnering with their marketing team, ARCrypto's digital ads now feature eye-catching designs that convert users across all major social media advertising platforms, and an email newsletter filled with engaging content that captivates their audience. The new designs align seamlessly with ARCrypto's brand identity, providing a cohesive and professional image for their educational services in the dynamic world of cryptocurrency.",
       tools: ['Figma'],
-      deliverables: ['Graphic Design', 'Research', 'Copy Writing'],
+      deliverables: ['Graphic Design', 'Research', 'Copywriting'],
       media: {
         cardImage: {
           url: "/projects/arcrypto/card.jpg",
@@ -248,7 +248,7 @@ export const projectData = [
       outcome: "His fully responsive website was built on the powerful Wordpress platform to give him a no-code way of changing out his ever-evolving content, and add future services like merchandising, etc. The design reflects his bold, yet straight-forward style, and combines his seemingly unrelated professions into one common-sense business of making you look great with a haircut, and making sure the world knows about it through his professional photography",
       demo: "https://www.germthecreator.com",
       tools: ['Figma, Wordpress, HTML, CSS'],
-      deliverables: ['UX/UI', 'Web Design', 'Web Development', 'Platform training', 'Copyright'],
+      deliverables: ['UX/UI', 'Web Design', 'Web Development', 'Platform training', 'Copywriting'],
       media: {
         cardImage: {
           url: "/projects/germ-the-creator/barbergallery.png",

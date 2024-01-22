@@ -2,12 +2,20 @@ import React from 'react';
 import { GrLinkedinOption } from 'react-icons/gr';
 import { FaInstagram, FaGithub } from 'react-icons/fa';
 import FAQ from '../components/FAQ';
+import { MotionP } from '../lib/motion';
 
 const Footer = () => {
   return (
       <section id="contact"  className="bg-ccOffBlack text-ccOffWhite">
         <div className="relative px-6 sm:px-12 md:px-20 lg:px-40 lg:max-w-8xl lg:mx-auto">
-          <p className="absolute top-80 -left-5 shrink-0 transform rotate-90 text-ccGray2 font-bold tracking-tight hidden md:block md:top-[15rem] md:text-4xl lg:text-5xl lg:-left-[2.25rem]">Contact</p>
+        <MotionP
+          initial={{ opacity: 0, x: -20, rotate: 90 }}
+          whileInView={{ opacity: 1, x:0, rotate: 90 }}
+          transition={{ duration: 0.35 }} 
+          className="absolute top-80 -left-5 shrink-0 text-ccGray2 font-bold tracking-tight hidden md:block md:top-[15rem] md:text-4xl lg:text-5xl lg:-left-[2.25rem]"
+        >
+          Contact
+        </MotionP>
           <div className="py-20 md:flex md:gap-10 xl:gap-14">
             <FAQ />
             <div className="mt-20 text-ccOffWhite text-center md:text-left md:mt-0 md:order-1 md:w-1/2">
