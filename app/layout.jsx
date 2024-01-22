@@ -26,7 +26,7 @@ export default async function RootLayout({
 
         <Header />
 
-          <main className="overflow-hidden">{children}</main>
+          <main className="overflow-hidden bg-ccOffBlack">{children}</main>
 
         <Footer />
 

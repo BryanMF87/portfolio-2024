@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 const Testimonials = () => {
 
     return (
-        <div id="testimonials" className="relative px-6 py-40 md:px-20 lg:max-w-8xl lg:mx-auto">
+        <div id="testimonials" className="relative px-6 py-40 sm:px-12 md:px-20 lg:max-w-8xl lg:mx-auto">
              <p className="absolute top-36 -left-14 shrink-0 transform rotate-90 text-ccGray2 font-bold tracking-tight hidden md:block md:text-4xl md:top-1/2 lg:text-5xl lg:-left-[5.25rem]">Testimonials</p>
             <Swiper
                 spaceBetween={50}

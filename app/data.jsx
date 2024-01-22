@@ -55,110 +55,228 @@ export const stackData = [
 
 export const projectData = [
     {
-      id: "germ-the-creator",
-      title: "Germ The Creator",
-      description: "Booking Website",
-      category: "development",
-      imageURL: "/projects/germthecreator.png",
-      altText: "Monkey Island sword fighting JavaScript game",
-      summary: "This homage to the Great Monkey Island web game series recreates the insult sword battling mini-game. Since building games require far more logical thinking than standard websites, this was a great chance to challenge my JavaScript programming skills while learning more advanced React hooks, promises, and SCSS.",
-      challenge: "Challenge here",
-      solution: "Solution here",
-      demo: "https://bryanfink.dev/scumm-bar-brawl/",
-      github: "https://github.com/BryanMF87/scumm-bar-brawl",
-      tools: ['HTML', 'SCSS', 'JavaScript', 'React'],
-      Roles: ['Designer', 'Developer']
-    },
-    {
       id: "scumm-bar-brawl",
       title: "Scumm Bar Brawl",
-      description: "JS Mini Game",
+      subtitle: "JS Mini Game",
+      description: "An homage to the legendary Monkey Island insult sword fighting minigame.",
       category: "development",
-      imageURL: "/projects/monkeyisland.png",
-      altText: "Monkey Island sword fighting JavaScript game",
-      summary: "This homage to the Great Monkey Island web game series recreates the insult sword battling mini-game. Since building games require far more logical thinking than standard websites, this was a great chance to challenge my JavaScript programming skills while learning more advanced React hooks, promises, and SCSS.",
-      challenge: "Challenge here",
-      solution: "Solution here",
+      summary: "I wanted to create a Monkey Island themed online game as a personal project to celebrate my life-long love with this legendary series. A reoccurring mini-game in each title was the insult sword fighting, which seemed like the perfect choice to recreate to show my true fandom.",
+      outcome: "The end result features original gameplay artwork and response patterns of the Monkey Island series, making it a beautiful recreation that fans will recognize and hopefully inspires new players to check out the actual Monkey Island series.",
       demo: "https://bryanfink.dev/scumm-bar-brawl/",
       github: "https://github.com/BryanMF87/scumm-bar-brawl",
       tools: ['HTML', 'SCSS', 'JavaScript', 'React'],
-      Roles: ['Designer', 'Developer']
+      deliverables: ['UX/UI', 'Web Design', 'Web Development', 'Research'],
+      media: {
+        cardImage: {
+          url: "/projects/scumm-bar-brawl/card.png",
+          alt: "Scumm Bar Brawl card image",
+        },
+        headerImage: {
+          url: "/projects/scumm-bar-brawl/header.jpg",
+          alt: "Scumm Bar Brawl header image",
+        },
+        firstMedia: {
+          type: "video",
+          url: "/projects/scumm-bar-brawl/intro.mp4",
+        },
+        secondMedia: {
+          type: "video",
+          url: "/projects/scumm-bar-brawl/fighting.mp4",
+        },
+        thirdMedia: {
+          type: "video",
+          url: "/projects/scumm-bar-brawl/guybrushwins.mp4",
+        },
+      },
+      quote: {
+        quote: "That's the second biggest monkey head I've ever seen!",
+        author: "Guybrush Threepwood"
+      }
     },
     {
-      id: "time-tracker-app",
-      title: "Time Tracker App",
-      description: "Productivity App",
+      id: "project-time-keeper",
+      title: "Project Time Keeper",
+      subtitle: "Productivity App",
+      description: "A personal app created to keep track of billable hours",
       category: "development",
-      imageURL: "/projects/timetracker.png",
-      altText: "Time tracking productivity app",
-      summary: "I needed a way to track my billable hours for future projects, so I built a simple time tracker that records overall project time as well as breaks the project down by actionable item. It features mobile-first responsive design, local storage information saving, and a night-mode for after hour coding use.",
-      challenge: "Challenge here",
-      solution: "Solution here",
+      summary: "I needed a way to track my billable hours for future projects. I wanted it to be easy to use and be able to keep track of multiple projects at once.",
+      outcome: "The end result is a simple time tracker that records overall project time as well as breaks the project down by actionable item. It features mobile-first responsive design, local storage for information saving, and a night-mode for after hour coding use.",
       demo: "https://bryanfink.dev/time-keeper/",
       github: "https://github.com/BryanMF87/time-keeper",
-      tools: ['HTML', 'CSS', 'JavaScript'],
-      Roles: ['Designer', 'Developer'] 
-    },
-    {
-      id: "world-flag-flashcards",
-      title: "World Flag Flashcards",
-      description: "Memory Game",
-      category: "development",
-      imageURL: "/projects/worldflags.png",
-      altText: "Multiple choice memory game for world flags ",
-      summary: "I needed a way to track my billable hours for future projects, so I built a simple time tracker that records overall project time as well as breaks the project down by actionable item. It features mobile-first responsive design, local storage information saving, and a night-mode for after hour coding use.",
-      challenge: "Challenge here",
-      solution: "Solution here",
-      demo: "https://bryanfink.dev/time-keeper/",
-      github: "https://github.com/BryanMF87/time-keeper",
-      tools: ['HTML', 'CSS', 'JavaScript'],
-      Roles: ['Designer', 'Developer'] 
-    },
-    {
-      id: "arcrypto",
-      title: "ARCrypto",
-      description: "Digital ads",
-      category: "design",
-      imageURL: "/projects/arcrypto.png",
-      altText: "ARCrypto digital ad packages",
-      summary: "Summary here",
-      challenge: "Challenge here",
-      solution: "Solution here",
-      demo: "https://bryanfink.dev/scumm-bar-brawl/",
-      github: "https://github.com/BryanMF87/scumm-bar-brawl",
-      tools: ['HTML', 'SCSS', 'JavaScript', 'React'],
-      Roles: ['Designer', 'Developer']
-    },
-    {
-      id: "proud-provisions",
-      title: "Proud Provisions",
-      description: "Website design",
-      category: "design",
-      imageURL: "/projects/proudprovisions.png",
-      altText: "Alt text here",
-      summary: "Summary here",
-      challenge: "Challenge here",
-      solution: "Solution here",
-      demo: "https://bryanfink.dev/scumm-bar-brawl/",
-      github: "https://github.com/BryanMF87/scumm-bar-brawl",
-      tools: ['HTML', 'SCSS', 'JavaScript', 'React'],
-      Roles: ['Designer', 'Developer']
+      tools: ['Figma', 'HTML', 'CSS', 'JavaScript'],
+      deliverables: ['UX/UI', 'Web Design', 'Web Development'],
+      media: {
+        cardImage: {
+          url: "/projects/project-time-keeper/card.png",
+          alt: "Time Keeper project card",
+        },
+        headerImage: {
+          url: "/projects/project-time-keeper/header.jpg",
+          alt: "Time Keeper project header",
+        },
+        firstMedia: {
+          type: "video",
+          url: "/projects/project-time-keeper/newproject.mp4",
+        },
+        secondMedia: {
+          type: "image",
+          url: "/projects/project-time-keeper/light.jpg",
+          alt: "Time Keeper light mode"
+        },
+        thirdMedia: {
+          type: "image",
+          url: "/projects/project-time-keeper/dark.jpg",
+          alt: "Time Keeper dark mode"
+        },
+      },
+      quote: {
+        quote: "Time management is life management.",
+        author: "Robin Sharma"
+      }
     },
     {
       id: "super-clean",
       title: "Super Clean",
-      description: "Website Design",
+      subtitle: "Website Design",
+      description: "A professional cleaning SquareSpace website as fresh and beautiful as their service",
       category: "design",
-      imageURL: "/projects/superclean.png",
-      altText: "Professional cleaning business, Super Clean",
-      summary: "I needed a way to track my billable hours for future projects, so I built a simple time tracker that records overall project time as well as breaks the project down by actionable item. It features mobile-first responsive design, local storage information saving, and a night-mode for after hour coding use.",
-      challenge: "Challenge here",
-      solution: "Solution here",
+      summary: "Super Clean came to me with their startup idea and sketches, then asked me to build them a no-code website that their users could book their services through.",
+      outcome: "The website design features large amounts of crisp white space, warm accent colors, and end-result imagery that invokes a professionally clean feeling of a well cared for home. The website itself is hosted on the popular SquareSpace platform with a 3rd party booking system, where they can update future content in an easy, no-code way.",
       demo: "https://www.supercleanatl.com/",
-      tools: ['SquareSpace', 'CSS', 'JavaScript'],
-      Roles: ['Designer', 'Developer'] 
+      tools: ['Figma', 'SquareSpace', 'CSS', 'JavaScript'],
+      deliverables: ['UX/UI', 'Web Design', 'Web Development'],
+      media: {
+        cardImage: {
+          url: "/projects/super-clean/card.png",
+          alt: "Super Clean project card",
+        },
+        headerImage: {
+          url: "/projects/super-clean/about.png",
+          alt: "Super Clean project header",
+        },
+        firstMedia: {
+          type: "image",
+          url: "/projects/super-clean/homepage.png",
+          alt: "Super-Clean homepage"
+        },
+        secondMedia: {
+          type: "image",
+          url: "/projects/super-clean/homesketch.jpg",
+          alt: "Initial sketch for the home page"
+        },
+        thirdMedia: {
+          type: "image",
+          url: "/projects/super-clean/aboutsketch.jpg",
+          alt: "Initial sketch for the about page"
+        },
+        fourthMedia: {
+          type: "image",
+          url: "/projects/super-clean/intropage.png",
+          alt: "Super Clean landing page"
+        },
+        fifthMedia: {
+          type: "video",
+          url: "/projects/super-clean/officemobile.mp4",
+        },
+        sixthMedia: {
+          type: "video",
+          url: "/projects/super-clean/homepagemobile.mp4",
+        },
+        seventhMedia: {
+          type: "image",
+          url: "/projects/super-clean/pageframes.jpg",
+          alt: "Several pages of the finished Super Clean website design"
+        },
+      },
+      quote: {
+        quote: "Bryan converted our sketches and ideas into a beautiful website that is perfect for our business. Wonderful work!",
+        author: "Vincent Wynn II"
+      }
     },
-
+    {
+      id: "arcrypto",
+      title: "ARCrypto",
+      subtitle: "Digital ads",
+      description: "A Crypto company in need of a graphic designer for their digital ads, posters, and weekly newsletter",
+      category: "design",
+      summary: "ARCrypto teaches their clients how to navigate the cryptocurrency market and promote themselves through digital ads and an email newsletter. They had tried a few designers but were having trouble finding someone who could create quality content that worked within their visual brand guidelines.",
+      outcome: "After partnering with their marketing team, ARCrypto's digital ads now feature eye-catching designs that convert users across all major social media advertising platforms, and an email newsletter filled with engaging content that captivates their audience. The new designs align seamlessly with ARCrypto's brand identity, providing a cohesive and professional image for their educational services in the dynamic world of cryptocurrency.",
+      tools: ['Figma'],
+      deliverables: ['Graphic Design', 'Research', 'Copy Writing'],
+      media: {
+        cardImage: {
+          url: "/projects/arcrypto/card.jpg",
+          alt: "ARCrypto project card",
+        },
+        headerImage: {
+          url: "/projects/arcrypto/header.jpg",
+          alt: "ARCrypto tropical getaway posters",
+        },
+        firstMedia: {
+          type: "image",
+          url: "/projects/arcrypto/baseflyers.jpg",
+          alt: "ARCrypto digital ad base flyers"
+        },
+        secondMedia: {
+          type: "image",
+          url: "/projects/arcrypto/newsletters.jpg",
+          alt: "ARCrypto newsletter digital ads"
+        },
+        thirdMedia: {
+          type: "image",
+          url: "/projects/arcrypto/gramposts.jpg",
+          alt: "ARCrypto instagram story digital ads"
+        },
+        fourthMedia: {
+          type: "image",
+          url: "/projects/arcrypto/squares.jpg",
+          alt: "ARCrypto instagram post digital ads"
+        },
+      },
+      quote: {
+        quote: "The client absolutely loved the work Bryan did for us and we are so happy to be working with him! Will definitly recommend to our partners in the future.",
+        author: "Wilson Smith"
+      }
+    },
+    {
+      id: "germ-the-creator",
+      title: "Germ The Creator",
+      subtitle: "Booking Website",
+      description: "A Wordpress website that combines barber scheduling with a professional photography business.",
+      category: "development",
+      summary: "German Ortega is a barber and photographer who marketed mostly through business cards and word of mouth. He wanted to scale his business and add services like online booking and a photography look book, so we made the decision to create his very own professional website.",
+      outcome: "His fully responsive website was built on the powerful Wordpress platform to give him a no-code way of changing out his ever-evolving content, and add future services like merchandising, etc. The design reflects his bold, yet straight-forward style, and combines his seemingly unrelated professions into one common-sense business of making you look great with a haircut, and making sure the world knows about it through his professional photography",
+      demo: "https://www.germthecreator.com",
+      tools: ['Figma, Wordpress, HTML, CSS'],
+      deliverables: ['UX/UI', 'Web Design', 'Web Development', 'Platform training', 'Copyright'],
+      media: {
+        cardImage: {
+          url: "/projects/germ-the-creator/barbergallery.png",
+          alt: "Germ the Creator card image",
+        },
+        headerImage: {
+          url: "/projects/germ-the-creator/barbergallery.png",
+          alt: "Germ the Creator header image",
+        },
+        firstMedia: {
+          type: "image",
+          url: "/projects/germ-the-creator/frames.jpg",
+          alt: "several layouts of Germ The Creator website"
+        },
+        secondMedia: {
+          type: "video",
+          url: "/projects/germ-the-creator/barberpage.mp4",
+        },
+        thirdMedia: {
+          type: "video",
+          url: "/projects/germ-the-creator/photographerpage.mp4",
+        },
+      },
+      quote: {
+        quote: "Bryan made everything incredibly easy, from suggesting the right platform to choosing the fonts, colors, and content to help elevate my brand.",
+        author: "German Ortega"
+      }
+    },
   ];
 
 

@@ -26,18 +26,8 @@ module.exports = {
         'xl': '1280px',
       },
       maxWidth: {
-        '8xl': '1400px',
-      },
-      animation: {
-        ["infinite-slider"]: "infiniteSlider 20s linear infinite",
-      },
-      keyframes: {
-        infiniteSlider: {
-          "0%": { transform: "translateX(0)" },
-          "100%": {
-            transform: "translateX(calc(-100px * 10))",
-          },
-        },
+        '8xl': '1440px',
+        '9xl': '1920px'
       },
     },
   },

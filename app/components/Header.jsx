@@ -21,16 +21,14 @@ const Header = () => {
 
   return (
     <header className='fixed z-50 top-0 left-0 w-full bg-ccOffBlack'>
-      <div className="flex justify-between items-center px-6 lg:max-w-8xl lg:mx-auto">
+      <div className="flex justify-between items-center px-6 sm:px-12 md:px-20 lg:px-40 lg:max-w-8xl lg:mx-auto">
         <div className="flex items-center justify-between w-full">
           <div className="flex items-center gap-2 py-2 w-full">
-            <Image 
-              src="/bryan2.png"
-              alt="Bryan Fink, Developer and designer"
-              width={40}
-              height={40}
-              className="w-10 h-10 object-cover rounded-full border-2 border-pink-600 drop-shadow-lg opacity-50"
-            />
+            <div className="flex flex-col justify-between w-5 h-4">
+              <div className="bg-ccHighlight w-9/12 h-0.5 rounded-xl"></div>
+              <div className="bg-ccOffWhite w-9/12 h-0.5 rounded-xl ml-1"></div>
+              <div className="bg-ccHighlight w-9/12 h-0.5 rounded-xl"></div>
+            </div>
             <p className="text-xl tracking-tight text-ccOffWhite font-medium md:text-lg">Bryan Fink</p>
           </div>
 
@@ -47,7 +45,7 @@ const Header = () => {
 
 
           {isNavOpen && (
-            <nav className="fixed top-14 right-0 bottom-0 left-0 z-50 w-full h-full flex flex-col gap-12 pt-10 p-6 bg-ccOffBlack md:flex-row md:gap-8 md:static md:h-auto md:w-auto md:p-0">
+            <nav className="fixed top-14 right-0 bottom-0 left-0 z-50 w-full h-full flex flex-col gap-12 pt-10 p-6 bg-ccOffBlack sm:px-12 md:flex-row md:gap-8 md:static md:h-auto md:w-auto md:p-0">
               <a href={"/"}  onClick={()=> toggleNav()} className="flex justify-between items-center w-full text-2xl text-ccOffWhite font-semibold md:text-sm">
                 Home
                 <IoIosArrowForward className="md:hidden"/>
