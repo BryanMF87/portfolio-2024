@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import {projectData} from '../data';
 import Link from 'next/link';
 import { MotionDiv, MotionP } from "../lib/motion";
+import Image from "next/image";
 
 const fadeInAnimation = {
   initial: { opacity: 0, y: 20 },
@@ -65,7 +66,7 @@ const  ProjectGallery = () => {
                   href={`/projects/${project.id}`}
                   className="w-full mx-auto rounded-xl group hover:shadow-xl"
                 >
-                  <img
+                  <Image
                     src={project.media.cardImage.url}
                     alt={project.media.cardImage.alt}
                     className="h-48 w-full sm:h-48 object-cover rounded-t-xl"

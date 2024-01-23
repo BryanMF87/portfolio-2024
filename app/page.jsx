@@ -100,7 +100,7 @@ const Home = () => {
 
         <section id="about" className="relative py-40 px-6 sm:px-12 md:px-20 lg:px-40 lg:max-w-8xl lg:mx-auto">
           <p className="absolute top-60 -left-10 shrink-0 transform rotate-90 text-ccGray2 font-bold tracking-tight hidden md:block md:top-1/2 md:text-4xl lg:text-5xl lg:-left-[3.75rem]">About Me</p>
-          <h2 className="text-center text-[1.5rem] leading-10 text-ccOffWhite md:text-[1.55rem] md:leading-normal">Hello! I'm Bryan, <span className="text-ccHighlight">designer & frontend developer for businesses looking to grow and modernize.</span> I will turn your ideas into reality by connecting your message to your clients in a meaningful, visual way.</h2>
+          <h2 className="text-center text-[1.5rem] leading-10 text-ccOffWhite md:text-[1.55rem] md:leading-normal">Hello! I&apos;m Bryan, <span className="text-ccHighlight">designer & frontend developer for businesses looking to grow and modernize.</span> I will turn your ideas into reality by connecting your message to your clients in a meaningful, visual way.</h2>
           <div className="flex flex-col gap-20 py-20 text-center max-w-xs mx-auto md:grid md:grid-cols-3 md:gap-10 md:text-left md:max-w-full">
             <MotionDiv
               initial={{ opacity: 0, x:-20 }}
@@ -112,7 +112,7 @@ const Home = () => {
                 <MdOutlineDesignServices className="text-ccHighlight mx-auto text-5xl md:text-2xl md:mx-0"/>
                 Graphic Design
               </h3>
-              <p className="text-ccGray text-lg">Do you need a professional logo? Business cards? I can instill your company's unique personality into stunning visuals that leave a lasting impression </p>
+              <p className="text-ccGray text-lg">Do you need a professional logo? Business cards? I can instill your company&apos;s unique personality into stunning visuals that leave a lasting impression </p>
             </MotionDiv>
             <MotionDiv
               initial={{ opacity: 0, x:-20 }}
@@ -124,7 +124,7 @@ const Home = () => {
                 <MdOutlineComputer className="text-ccHighlight mx-auto text-5xl md:text-2xl md:mx-0"/>
                 Web Design
               </h3>
-              <p className="text-ccGray text-lg">Whether you're in need of a user-friendly interface, an engaging website design, or compelling digital ads, my design services are tailored to meet your every requirement.</p>
+              <p className="text-ccGray text-lg">Whether you&apos;re in need of a user-friendly interface, an engaging website design, or compelling digital ads, my design services are tailored to meet your every requirement.</p>
             </MotionDiv>
             <MotionDiv
               initial={{ opacity: 0, x:-20 }}
@@ -136,7 +136,7 @@ const Home = () => {
                 <AiOutlineCode className="text-ccHighlight mx-auto text-5xl md:text-2xl md:mx-0"/>
                 FE Development
               </h3>
-              <p className="text-ccGray text-lg">I will transform designs into dynamic, responsive, interactive web experiences that  captivates and retains your users' attention.</p>
+              <p className="text-ccGray text-lg">I will transform designs into dynamic, responsive, interactive web experiences that  captivates and retains your users&apos; attention.</p>
             </MotionDiv>
           </div>
         </section>

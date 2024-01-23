@@ -113,7 +113,7 @@ const Project = ({ params }) => {
 
 
             <div className="flex flex-col text-center gap-6 max-w-2xl mx-auto pt-40 pb-20">
-              <p className="text-3xl leading-relaxed">"{selectedProject.quote.quote}"</p>
+              <p className="text-3xl leading-relaxed">&quot;{selectedProject.quote.quote}&quot;</p>
               <p className="text-2xl text-ccHighlight">{selectedProject.quote.author}</p>
             </div>
 

@@ -1,4 +1,4 @@
-import { FaFigma, FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaShopify, FaSquarespace, FaCode, FaGithub } from 'react-icons/fa';
+import { FaFigma, FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaShopify, FaSquarespace, FaGithub } from 'react-icons/fa';
 import { SiTailwindcss, SiTypescript, SiNextdotjs } from 'react-icons/si';
 
 
@@ -89,7 +89,7 @@ export const projectData = [
         },
       },
       quote: {
-        quote: "That's the second biggest monkey head I've ever seen!",
+        quote: "That&apos;s the second biggest monkey head I&apos;ve ever seen!",
         author: "Guybrush Threepwood"
       }
     },
@@ -200,7 +200,7 @@ export const projectData = [
       description: "A Crypto company in need of a graphic designer for their digital ads, posters, and weekly newsletter",
       category: "design",
       summary: "ARCrypto teaches their clients how to navigate the cryptocurrency market and promote themselves through digital ads and an email newsletter. They had tried a few designers but were having trouble finding someone who could create quality content that worked within their visual brand guidelines.",
-      outcome: "After partnering with their marketing team, ARCrypto's digital ads now feature eye-catching designs that convert users across all major social media advertising platforms, and an email newsletter filled with engaging content that captivates their audience. The new designs align seamlessly with ARCrypto's brand identity, providing a cohesive and professional image for their educational services in the dynamic world of cryptocurrency.",
+      outcome: "After partnering with their marketing team, ARCrypto&apos;s digital ads now feature eye-catching designs that convert users across all major social media advertising platforms, and an email newsletter filled with engaging content that captivates their audience. The new designs align seamlessly with ARCrypto&apos;s brand identity, providing a cohesive and professional image for their educational services in the dynamic world of cryptocurrency.",
       tools: ['Figma'],
       deliverables: ['Graphic Design', 'Research', 'Copywriting'],
       media: {
