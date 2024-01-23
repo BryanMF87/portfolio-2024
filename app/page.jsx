@@ -18,7 +18,8 @@ const Home = () => {
         <MotionP
           initial={{ opacity: 0, x: -20, rotate: 90 }}
           whileInView={{ opacity: 1, x:0, rotate: 90 }}
-          transition={{ duration: 0.35 }} 
+          transition={{ duration: 0.35 }}
+          viewport={{ once: true }}
           className="absolute top-2/3 -left-14 shrink-0 text-ccGray2 font-bold tracking-tight hidden md:block md:text-4xl lg:text-5xl lg:-left-[5.25rem]"
         >
           Hello World
@@ -29,8 +30,9 @@ const Home = () => {
             <div className="relative z-20 flex justify-center">
               <MotionDiv
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{duration: 0.5, delay: 0.25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{duration: 0.5 }}
+                viewport={{ once: true }}
                 className="absolute z-[-2] w-80 h-32 -mt-6 md:-mt-10"
               >
                 <span className="absolute top-4 left-20 font-semibold text-ccGray2 text-3xl lg:text-4xl lg:top-4 lg:left-12">Let</span>
@@ -40,8 +42,9 @@ const Home = () => {
               </MotionDiv>
               <MotionDiv
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{duration: 0.5, delay: 0.15 }} 
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{duration: 0.5 }} 
+                viewport={{ once: true }}
                 className="absolute z-[-3] w-80 h-32 -mt-6 md:-mt-10"
               >
                 <span className="absolute -top-2 left-32 text-ccGray2 font-semibold opacity-50 text-2xl lg:text-2xl lg:top-0 lg:left-26">Colors</span>
@@ -52,14 +55,16 @@ const Home = () => {
               
               <MotionDiv
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{duration: 0.25, delay: 0.05 }} 
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{duration: 0.25 }} 
+                viewport={{ once: true }}
               >
                 <Image
                   src="/bryan2.png"
                   alt="Bryan Fink"
                   width="100"
                   height="200"
+                  priority={true}
                   className="w-56 h-auto object-cover shrink-0 md:w-52 lg:w-64"
                 />
               </MotionDiv>
@@ -67,8 +72,9 @@ const Home = () => {
               {/* pink box */}
               <MotionDiv
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duartion: 0.05 }}
+                viewport={{ once: true }}
                 className="absolute bottom-0 z-[-1] bg-ccHighlight w-56 h-28 rounded-xl md:w-64">
               </MotionDiv>
             </div>
@@ -100,6 +106,7 @@ const Home = () => {
               initial={{ opacity: 0, x:-20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.1 }}
+              viewport={{ once: true }}
             >
               <h3 className="text-2xl text-ccOffWhite mb-4 lg:flex lg:gap-2 lg:items-center">
                 <MdOutlineDesignServices className="text-ccHighlight mx-auto text-5xl md:text-2xl md:mx-0"/>
@@ -111,6 +118,7 @@ const Home = () => {
               initial={{ opacity: 0, x:-20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.1, delay: 0.15 }}
+              viewport={{ once: true }}
             >
               <h3 className="text-2xl text-ccOffWhite mb-4 lg:flex lg:gap-2 lg:items-center">
                 <MdOutlineComputer className="text-ccHighlight mx-auto text-5xl md:text-2xl md:mx-0"/>
@@ -122,6 +130,7 @@ const Home = () => {
               initial={{ opacity: 0, x:-20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.1, delay: .25 }}
+              viewport={{ once: true }}
             >
               <h3 className="text-2xl text-ccOffWhite mb-4 lg:flex lg:gap-2 lg:items-center">
                 <AiOutlineCode className="text-ccHighlight mx-auto text-5xl md:text-2xl md:mx-0"/>

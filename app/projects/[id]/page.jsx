@@ -84,6 +84,7 @@ const Project = ({ params }) => {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duraction: 0.35 }}
+                viewport={{ once: true }}
                 className="flex justify-center items-center my-20"
               >
                 <MediaItem media={selectedProject.media.firstMedia} type="full" />
@@ -127,6 +128,7 @@ const Project = ({ params }) => {
                   initial={{ opacity: 0, x: -50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duraction: 0.25 }}
+                  viewport={{ once: true }}
                   className="w-full"
                 >
                   <MediaItem media={selectedProject.media.secondMedia} type="inline" />
@@ -135,6 +137,7 @@ const Project = ({ params }) => {
                   initial={{ opacity: 0, x: 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duraction: 0.25}}
+                  viewport={{ once: true }}
                   className="w-full"
                 >
                   <MediaItem media={selectedProject.media.thirdMedia} type="inline" />
@@ -165,6 +168,7 @@ const Project = ({ params }) => {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duraction: 0.35 }}
+                viewport={{ once: true }}
                 className="flex justify-center items-center"
               >
                 <MediaItem media={selectedProject.media.fourthMedia} type="full" />
@@ -179,6 +183,7 @@ const Project = ({ params }) => {
                   initial={{ opacity: 0, x: -50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duraction: 0.25 }}
+                  viewport={{ once: true }}
                   className="w-full"
                 >
                   <MediaItem media={selectedProject.media.fifthMedia} type="inline" />
@@ -187,6 +192,7 @@ const Project = ({ params }) => {
                   initial={{ opacity: 0, x: 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duraction: 0.25 }}
+                  viewport={{ once: true }}
                   className="w-full"
                 >
                   <MediaItem media={selectedProject.media.sixthMedia} type="inline" />
@@ -199,6 +205,7 @@ const Project = ({ params }) => {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duraction: 0.35 }} 
+                viewport={{ once: true }}
                 className="flex justify-center items-center"
               >
                 <MediaItem media={selectedProject.media.seventhMedia} type="full" />

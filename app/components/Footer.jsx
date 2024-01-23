@@ -12,6 +12,7 @@ const Footer = () => {
           initial={{ opacity: 0, x: -20, rotate: 90 }}
           whileInView={{ opacity: 1, x:0, rotate: 90 }}
           transition={{ duration: 0.35 }} 
+          viewport={{ once: true }}
           className="absolute top-80 -left-5 shrink-0 text-ccGray2 font-bold tracking-tight hidden md:block md:top-[15rem] md:text-4xl lg:text-5xl lg:-left-[2.25rem]"
         >
           Contact

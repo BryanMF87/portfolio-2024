@@ -16,7 +16,7 @@ const FAQ = () => {
     <MotionDiv 
       initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0 }}
-      duration={{ duration: 0.15 }}
+      transition={{ duration: 0.15 }}
       className="md:order-2 md:w-1/2"
     >
         <h2 className="font-medium text-3xl text-ccOffWhite">Frequently Asked Questions</h2>

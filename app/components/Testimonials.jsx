@@ -16,7 +16,8 @@ const Testimonials = () => {
              <MotionP
                 initial={{ opacity: 0, x: -20, rotate: 90 }}
                 whileInView={{ opacity: 1, x:0, rotate: 90 }}
-                transition={{ duration: 0.35 }} 
+                transition={{ duration: 0.35 }}
+                viewport={{ once: true }}
                 className="absolute top-36 -left-14 shrink-0 text-ccGray2 font-bold tracking-tight hidden md:block md:text-4xl md:top-1/2 lg:text-5xl lg:-left-[5.25rem]">
                     Testimonials
             </MotionP>
@@ -34,6 +35,7 @@ const Testimonials = () => {
                                     initial={{ opacity: 0, y:10 }}
                                     whileInView={{ opacity: 1, y:0 }}
                                     transition={{ duration: 0.15, delay:0.05}}
+                                    viewport={{ once: true }}
                                 >
                                     <Image
                                         src={testimonial.image} 
@@ -49,6 +51,7 @@ const Testimonials = () => {
                                     initial={{ opacity: 0, y:20 }}
                                     whileInView={{ opacity: 1, y:0 }}
                                     transition={{ duration: 0.15}}
+                                    viewport={{ once: true }}
                                     className="absolute bottom-1 z-[-2] bg-ccHighlight w-[13.95rem] h-24 mx-auto rounded-xl md:w-[99.5%] lg:h-28"
                                 ></MotionDiv>
 
